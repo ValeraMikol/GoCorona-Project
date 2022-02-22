@@ -1,0 +1,43 @@
+.header {
+
+    // .header__container
+
+    &__container {
+        
+    }
+
+    // .header__body
+
+    &__body {
+        border: 1px solid red;
+    }
+
+    // .header__logo
+
+    &__logo {
+        p{
+            
+        }
+        a{
+            font-weight: bold;
+            font-size: rem(18);
+            line-height: rem(21);
+        }
+    }
+
+    // .header__list
+
+    &__list {
+    }
+
+    // .header__link
+
+    &__link {
+    }
+
+    // .header__btn
+
+    &__btn {
+    }
+}
+

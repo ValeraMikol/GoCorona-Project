@@ -4,6 +4,10 @@
 @import "./config/global";
 @import "./utils/functions";
 
+@import "./components/index";
+@import "./components/blocks/header.scss";
+@import "./components/mainpage.scss";
+
 html,
 body {
   font-family: $f-main, sans-serif;
@@ -116,43 +120,31 @@ a {
   }
 }
 
-._container {
-  @include container(rem($wrapRem));
-  padding: 0 rem(20);
-  margin: 0 auto;
-}
 
-.header {
-  padding-top: 0;
-}
+
+
+
+
+
 
 .wrapper {
-  min-height: 100%;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
+  min-height: 100%;
+  
+}
+.main{
+  flex: 1 1 auto;
 }
 
 .btn {
-  display: inline-flex;
-  padding: 0 rem(25);
-  justify-content: center;
-  align-items: center;
-  height: rem(39);
-  transition: all 0.3s ease 0s;
-  background-color: #f68038;
-  font-size: rem(12);
-  line-height: rem(18);
-  font-weight: 900;
-  text-transform: uppercase;
-  color: #ffffff;
-
-  @media(min-width: 992px) {
-    &:hover {
-      background-color: #ca7641;
-    }
-  }
 }
 
+[class*="__container"]{
+  max-width: rem(1057);
+  margin: 0 auto;
+}
 ._ibg {
   position: relative;
 }
@@ -181,6 +173,3 @@ body.ie ._ibg img {
 }
 
 
-@import "./components/index";
-@import "./components/blocks/header.scss";
-@import "./components/mainpage.scss";
