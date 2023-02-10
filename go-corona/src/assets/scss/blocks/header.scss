@@ -1,0 +1,33 @@
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  &__container {
+    display: flex;
+    align-items: center;
+    min-height: 114px;
+  }
+
+  &__logo {
+  }
+
+  &__button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 0 0 252px;
+    @include breakpoint($breakpoint-3) {
+      flex: 0 0 215px;
+    }
+  }
+
+  //   @media (max-width: 991.98px) {
+  //     &__button {
+  //       display: flex;
+  //       justify-content: flex-end;
+  //       flex: 0 0 172px;
+  //     }
+  //   }
+}

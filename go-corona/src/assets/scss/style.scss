@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import "./vendor/null.scss";
+@import "./vars.scss";
+@import "./mixins.scss";
+
+[class*="__container"] {
+  max-width: 1087px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+@media (max-width: 1087px) {
+  [class*="__container"] {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  [class*="__container"] {
+    max-width: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  [class*="__container"] {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+
+.btn {
+  width: 130px;
+  height: 40px;
+  font-weight: 800;
+  font-size: 10px;
+  line-height: 12px;
+  color: #fcfdfe;
+  background-color: #ec5863;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transition: all 0.2s linear;
+
+  &:hover {
+    background-color: darken(#ec5863, 5%);
+    transform: scale(1.04);
+  }
+}
+.btn--blue {
+  background: #4285f4;
+  &:hover {
+    background-color: darken(#4285f4, 5%);
+    transform: scale(1.04);
+  }
+}
+
+.title {
+  font-family: "Rubik";
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 3.14rem;
+  line-height: 126%;
+}
+
+.subtitle {
+  font-family: "Rubik";
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 0.85rem;
+  line-height: 138.5%;
+  color: #616161;
+}
+
+@media (max-width: $container) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .subtitle {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: $breakpoint-1) {
+  .title {
+    font-size: 2.1rem;
+  }
+  .subtitle {
+    font-size: 0.75rem;
+  }
+}
+
+@import "./blocks/header.scss";
+@import "./blocks/menu.scss";
+@import "./blocks/burger.scss";
+@import "./blocks/get-started.scss";
+@import "./blocks/features.scss";
+@import "./blocks/experts.scss";
+@import "./blocks/healthcare.scss";
+@import "./blocks/footer.scss";
